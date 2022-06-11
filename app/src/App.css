@@ -1,0 +1,44 @@
+@import url('https://fonts.google.com/specimen/Poppins#standard-styles');
+.App {
+  text-align: center;
+  background-color: #FAFAFB;
+}
+
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+button{
+  text-decoration: none;
+  background-color: #2F80ED;
+  color: #FFFFFF;
+  padding: 8px 16px 8px 16px;
+  width: 103px;
+  height: 31.98px;
+  border: 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.Created{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  
+  text-align: center;
+  padding-bottom: 15px;
+  color: #A9A9A9;
+}
