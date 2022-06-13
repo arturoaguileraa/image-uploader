@@ -1,0 +1,48 @@
+.Uploading{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 322.36px;
+    height: 71.57px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 32px 36px;
+    
+}
+
+.BarraGris{
+    width: 340.71px;
+    height: 6px;
+    background: #F2F2F2;
+    border-radius: 8px;
+}
+
+.BarraAzul{
+    position: relative;
+    transition: all 500ms ease;
+    width: 30%;
+    height: 6px;
+    background: #2F80ED;
+    border-radius: 8px;
+    animation: load 2s linear infinite;
+}
+
+@keyframes load{
+    0%{ 
+        width: 0%;
+    }
+    30%{
+        left: 0%;
+        width: 30%;
+    }
+    70%{ 
+        left: 70%;
+        width: 30%;
+    }
+    100%{
+        left: 100%;
+        width: 0%;
+    }
+}
