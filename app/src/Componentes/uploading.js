@@ -1,19 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Componentes/uploading.css";
+import api from "../api";
 
-export default function Uploading({ newfile, finished }) {
-    const urlfile = URL.createObjectURL(newfile);
-    console.log(urlfile);
+export default async function Uploading({ newfile, finish }) {
+    const [finished, setFinished] = finish;
+
+    setFinished(true);
 
     return (
-        <>
-            <img src={urlfile}></img>
-            <div className="Uploading">
-                <div className="Uyi">Uploading...</div>
-                <div className="BarraGris">
-                    <div className="BarraAzul"></div>
-                </div>
+        <div className="Uploading">
+            <div className="Uyi">Uploading...</div>
+            <div className="BarraGris">
+                <div className="BarraAzul"></div>
             </div>
-        </>
+        </div>
     );
 }

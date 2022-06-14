@@ -19,11 +19,14 @@ function App() {
                         empty={[isEmpty, setIsEmpty]}
                     />
                 ) : finished ? (
-                    <Successfully />
+                    <Successfully
+                        newfile={[file, setFile]}
+                        empty={[isEmpty, setIsEmpty]}
+                    />
                 ) : (
                     <Uploading
                         newfile={file}
-                        finished={[finished, setFinished]}
+                        finish={[finished, setFinished]}
                     />
                 )}
                 <div className="Created">

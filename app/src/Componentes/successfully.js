@@ -1,7 +1,9 @@
 import React from "react";
 import "../Componentes/successfully.css";
 
-export default function Successfully() {
+export default function Successfully({ newfile, empty }) {
+    const [file, setFile] = newfile;
+    const urlfile = URL.createObjectURL(file);
     return (
         <dev className="Success">
             <div>
@@ -12,15 +14,9 @@ export default function Successfully() {
                 ></img>
                 <div className="us">Uploaded Successfully!</div>
             </div>
-            <img
-                src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGFib3J8ZW58MHx8MHx8&w=1000&q=80"
-                className="foto"
-                alt="FotoSubida"
-            ></img>
+            <img src={urlfile} className="foto" alt="FotoSubida"></img>
             <div className="linkfoto">
-                <div className="onlylink">
-                    https://github.com/arturoaguileraa/image-uploader/uuuuuu
-                </div>
+                <div className="onlylink">{urlfile}</div>
                 <button
                     onClick={() => {
                         navigator.clipboard.writeText("Hola que pasa");
